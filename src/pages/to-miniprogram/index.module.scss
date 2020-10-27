@@ -1,0 +1,63 @@
+/*
+ * @Author: czy0729
+ * @Date: 2020-06-30 11:17:25
+ * @Last Modified by: czy0729
+ * @Last Modified time: 2020-10-23 16:08:45
+ */
+.page {
+  width: 100vw;
+  padding-top: 218px;
+}
+.body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 74px 74px 56px;
+  margin: 0 96px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 7px 28px 0px rgba(0, 0, 0, 0.1);
+}
+.img {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 50%;
+  width: 104px;
+  height: 104px;
+  margin-top: -52px;
+  margin-left: -52px;
+}
+.title {
+  display: block;
+  font-size: 36px;
+  font-weight: 500;
+  color: #282828;
+  line-height: 48px;
+  text-align: center;
+}
+.desc {
+  display: block;
+  margin-top: 12px;
+  font-size: 26px;
+  font-weight: 400;
+  color: #909399;
+  line-height: 40px;
+  text-align: center;
+}
+.btn {
+  display: inline-block;
+  min-width: 320px;
+  height: 64px;
+  padding: 14px 30px;
+  margin: 64px auto 0;
+  font-size: 28px;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 36px;
+  background: linear-gradient(149deg, #3e6ccc 0%, #3da8cc 100%);
+  border: 0;
+  outline: 0;
+  border-radius: 32px;
+}

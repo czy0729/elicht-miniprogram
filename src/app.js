@@ -2,16 +2,18 @@
  * @Author: czy0729
  * @Date: 2020-08-07 10:00:33
  * @Last Modified by: czy0729
- * @Last Modified time: 2020-10-27 10:19:41
+ * @Last Modified time: 2020-10-27 11:16:23
  */
 import Taro, { Component } from '@tarojs/taro'
 import { Provider } from '@tarojs/mobx'
-import { ContentStore } from '@stores'
+import { ContentStore, UserStore } from '@stores'
+import 'taro-ui/dist/style/index.scss'
+import './styles/app.weapp.scss'
 import Index from './pages/index/index'
-import './app.scss'
 
 const store = {
-  ContentStore
+  ContentStore,
+  UserStore
 }
 
 class App extends Component {

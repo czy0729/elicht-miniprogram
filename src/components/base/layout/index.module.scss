@@ -1,0 +1,54 @@
+/*
+ * @Author: czy0729
+ * @Date: 2020-03-10 16:49:07
+ * @Last Modified by: czy0729
+ * @Last Modified time: 2020-04-24 00:09:43
+ */
+@import '@styles/theme';
+
+$z-index-base: $z-index-mask;
+
+.layout {
+  position: fixed;
+  z-index: $z-index-base + 1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  visibility: hidden;
+  transition: visibility 160ms $cb;
+
+  &WithoutMask {
+    pointer-events: none;
+  }
+  &Show {
+    visibility: visible;
+  }
+  &Show .fixed {
+    transform: translate3d(0, 0, 1px);
+  }
+  &Show .mask {
+    opacity: 1;
+  }
+}
+.fixed {
+  position: absolute;
+  z-index: $z-index-base + 2;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translate3d(0, 100%, 1px);
+  transition: transform 160ms ease-in;
+  pointer-events: initial;
+}
+.mask {
+  position: absolute;
+  z-index: $z-index-base + 1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: opacity 160ms ease-in;
+}

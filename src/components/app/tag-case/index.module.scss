@@ -1,0 +1,104 @@
+/*
+ * @Author: czy0729
+ * @Date: 2020-03-16 10:42:18
+ * @Last Modified by: czy0729
+ * @Last Modified time: 2020-06-09 11:07:22
+ */
+@import '@styles/theme';
+@import '@styles/mixins';
+
+.dot {
+  position: relative;
+  width: 24 * $one-px;
+  height: 24 * $one-px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 50%;
+
+  @media only screen and (-webkit-min-device-pixel-ratio: 2) {
+    width: 12 * $one-px;
+    height: 12 * $one-px;
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 64 * $one-px;
+    height: 64 * $one-px;
+    transform: translate(-50%, -50%);
+
+    @media only screen and (-webkit-min-device-pixel-ratio: 2) {
+      width: 32 * $one-px;
+      height: 32 * $one-px;
+    }
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 8 * $one-px;
+    height: 8 * $one-px;
+    background: $color-plain;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+
+    @media only screen and (-webkit-min-device-pixel-ratio: 2) {
+      width: 6 * $one-px;
+      height: 6 * $one-px;
+    }
+  }
+}
+.text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 6px 20px;
+  margin-left: 32px;
+  white-space: nowrap;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 24px;
+}
+.raw {
+  display: block !important;
+  max-width: 50vw;
+}
+.btns {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: -122px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 22px;
+
+  &Reverse {
+    flex-direction: row-reverse;
+  }
+}
+.btn {
+  width: 56px;
+  height: 44px;
+  padding: 0 8px;
+
+  &Split {
+    height: 20px;
+    @include thinBorder((left));
+  }
+}
+.tagCase {
+  width: auto;
+  height: 44px;
+
+  &Reverse .text {
+    left: initial;
+    right: 0;
+    margin-left: initial;
+    margin-right: 32px;
+  }
+  &Reverse .btns {
+    right: initial;
+    left: 0;
+    margin-right: initial;
+    margin-left: -122px;
+  }
+}

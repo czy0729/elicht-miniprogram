@@ -1,0 +1,6 @@
+:host {
+  display: block;
+  /* overflow: scroll; */
+  vertical-align: top;
+  -webkit-overflow-scrolling: touch;
+}

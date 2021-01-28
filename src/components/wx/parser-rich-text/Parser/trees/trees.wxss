@@ -1,0 +1,110 @@
+/*
+ * @Author: czy0729
+ * @Date: 2019-11-25 16:08:14
+ * @Last Modified by: czy0729
+ * @Last Modified time: 2020-06-16 19:14:46
+ */
+/* add by czy0729 */
+.table {
+  padding: 0 28rpx;
+  margin-bottom: 28rpx;
+  font-size: 32rpx;
+  line-height: 48rpx;
+  color: #4a4a4a;
+}
+rich-text {
+  display: block;
+  width: initial !important;
+  height: initial !important;
+  padding: 0 28rpx;
+  margin-bottom: 32rpx;
+  font-size: 32rpx;
+  line-height: 48rpx;
+  color: #4a4a4a;
+}
+
+/* 链接受到点击的hover-class，可自定义修改 */
+.navigator-hover {
+  opacity: 0.7;
+  text-decoration: underline;
+}
+
+/* 以下内容不建议修改 */
+:host {
+  display: inherit;
+  float: inherit;
+  vertical-align: top;
+}
+.sub,
+.sup,
+.text,
+.bdo,
+.bdi,
+.ruby,
+.rt,
+.span {
+  display: inline-block !important;
+}
+.div,
+.blockquote,
+.p {
+  display: block;
+}
+.b,
+.strong {
+  display: inline;
+  font-weight: bold;
+}
+.em,
+.i {
+  display: inline;
+  font-style: italic;
+}
+.del {
+  display: inline;
+  text-decoration: line-through;
+}
+.ins {
+  display: inline;
+  text-decoration: underline;
+}
+.code {
+  display: inline;
+  font-family: monospace;
+}
+.big {
+  font-size: 1.2em;
+  display: inline;
+}
+.small {
+  font-size: 0.8em;
+  display: inline;
+}
+.q,
+.span,
+.label,
+.abbr {
+  display: inline;
+}
+.q::before {
+  content: '"';
+}
+.q::after {
+  content: '"';
+}
+.video {
+  background-color: black;
+  width: 300px;
+  height: 225px;
+  display: inline-block;
+  position: relative;
+}
+.video-triangle {
+  border-width: 15px 0 15px 30px;
+  border-style: solid;
+  border-color: transparent transparent transparent white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -15px 0 0 -15px;
+}

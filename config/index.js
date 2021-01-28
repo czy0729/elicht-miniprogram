@@ -2,7 +2,7 @@
  * @Author: czy0729
  * @Date: 2019-06-10 11:53:12
  * @Last Modified by: czy0729
- * @Last Modified time: 2020-10-27 10:27:46
+ * @Last Modified time: 2020-10-27 14:36:59
  */
 const path = require('path')
 const sassImportor = function(url) {
@@ -77,10 +77,10 @@ const config = {
       //   from: 'src/components/wx/cropper/Cropper/',
       //   to: 'dist/components/wx/cropper/Cropper/'
       // },
-      // {
-      //   from: 'src/components/wx/parser-rich-text/Parser/',
-      //   to: 'dist/components/wx/parser-rich-text/Parser/'
-      // }
+      {
+        from: 'src/components/wx/parser-rich-text/Parser/',
+        to: 'dist/components/wx/parser-rich-text/Parser/'
+      }
     ],
     options: {}
   },
